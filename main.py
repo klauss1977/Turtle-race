@@ -22,7 +22,6 @@ while is_race_on:
     for turtle in all_turtles:
         if turtle.xcor()>=225:
             screen.title(f"Winner is {turtle.pencolor()} turtle")
-            screen.bgcolor(turtle.pencolor())
             is_race_on=False
             if user_bet==turtle.pencolor():
                 print(f"You won! The {turtle.pencolor()} turtle is the winner")
